@@ -14,7 +14,7 @@ def create_app(test_config=None):
     app.config.from_mapping(
         SECRET_KEY=os.getenv("JWT_SECRET_KEY", "pji2-dev-secret-key-1234567890"),
         JWT_SECRET_KEY=os.getenv("JWT_SECRET_KEY", "pji2-dev-secret-key-1234567890"),
-        SQLALCHEMY_DATABASE_URI=os.getenv("DATABASE_URL", "sqlite:///pji2.db"),
+        SQLALCHEMY_DATABASE_URI=os.getenv("https://jfhotcskugamxktspzlh.supabase.co", "sqlite:///pji2.db"),
         SQLALCHEMY_TRACK_MODIFICATIONS=False,
     )
 
